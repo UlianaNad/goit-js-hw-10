@@ -1,7 +1,7 @@
 import { fetchBreeds, fetchCatByBreed } from "./cat-api";
 
 import Notiflix from 'notiflix';
-import SlimSelect from 'slim-select'
+
 
 
 const refs = {
@@ -18,13 +18,14 @@ function renderSelect(){
     .then(data => {
 
         const selectEl = data.map(el => {
-            return `<option value="${el.id}">${el.name}</option>`;
+            return `<option value="${el.id}">${el.name}</option>`
         });
 
         refs.breedSelect.innerHTML = selectEl;
-        // new SlimSelect({
-        //     select: '#selectElement',
-        //   })
+
+        new SlimSelect({
+            select: '#selectElement',
+          })
     })
     .catch(showError)
     .finally(hideLoader);   
