@@ -3,6 +3,39 @@ body{
     display: none;
   }
  
+  .cat-el{
+    max-width: 740px;
+    margin: 0 auto;
+    border: 1px solid rgba(65, 65, 65, 0.429);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3);
+
+    p{
+      font-family: "Bebas Neue", cursive;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      color: rgb(29, 29, 49);
+    }
+
+    h4{
+      margin: 0 0 18px 0;
+      font-family: "Bebas Neue", cursive;
+      font-size: 1.9rem;
+      letter-spacing: 0.06em;
+      color: rgb(45, 45, 80);
+    }
+    figure {
+      margin: 0;
+      padding: 0;
+      aspect-ratio: 16 / 9;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  }
     .backdrop{
         width: 100vw;
         height: 100vh;
@@ -54,4 +87,5 @@ body{
 body.show-loader .backdrop{
     display: flex;
 }
+
 
