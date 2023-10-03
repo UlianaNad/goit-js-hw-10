@@ -1,7 +1,6 @@
 import { fetchBreeds, fetchCatByBreed } from "./cat-api";
 
 import Notiflix from 'notiflix';
-//import SlimSelect from 'slim-select';
 
 const refs = {
     breedSelect: document.querySelector('.breed-select'),
@@ -19,9 +18,6 @@ function renderSelect(){
         }).join('');
 
         refs.breedSelect.innerHTML = selectEl;
-        // new SlimSelect({
-        //     select: refs.breedSelect
-        //   })
 
     })
     .catch(showError)
